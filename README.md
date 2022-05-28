@@ -4,8 +4,8 @@ Transferring worlds between PCs in Bedrock Edition can be achieved by using Expo
 
 This process can be time-consuming if you have many worlds to transfer. Fortunately, the MCWorld file format is just a zip file with the extension `.mcworld`. This repo contains two scripts:
 
-* `Export.ps1` - exports all worlds from the `minecraftWorlds` directory++ to the specified destination directory
-* `Import.ps1` - imports all worlds in the specified source directory
+* `export.ps1` - exports all worlds from the `minecraftWorlds` directory++ to the specified destination directory
+* `import.ps1` - imports all worlds in the specified source directory
 
 ## Caveats
 
