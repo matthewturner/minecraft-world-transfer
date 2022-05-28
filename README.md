@@ -15,5 +15,5 @@ This process can be time-consuming if you have many worlds to transfer. Fortunat
 
 ## TLDR;
 
-++ The full location is ~\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds
+++ The full location is %LocalAppData%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds
 +++ If you don't wait, the same world will be imported multiple times in place of the next worlds. ie Importing worlds A, B, C, D in one go will result in A, A, A, A in Minecraft.
