@@ -9,7 +9,11 @@ foreach ($world in $worlds)
     #Write-Output $world.Parent.FullName
     $sourcePath = $world.Parent.FullName + "\" + $world.Name + "\*"
     #Write-Output $sourcePath
-    $destinationPath = $destinationDirectory + "\" + $world.Name + ".mcworld"
+    $levelnameFilePath = $world.FullName + "\levelname.txt"
+    $worldName = Get-Content -Path $levelnameFilePath
+    Write-Output $worldName
+    $worldName = $worldName.Split([IO.Path]::GetInvalidFileNameChars()) -join '_'
+    $destinationPath = $destinationDirectory + "\" + $worldName + "-" + $world.Name + ".mcworld"
     Write-Output $destinationPath
     Compress-Archive -Path $sourcePath -DestinationPath $destinationPath
 }
